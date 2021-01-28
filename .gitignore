@@ -1,2 +1,5 @@
-
-Kalley/.DS_Store
+.vscode/
+nuestra-compania/
+node_modules
+package-lock.json
+.DS_Store

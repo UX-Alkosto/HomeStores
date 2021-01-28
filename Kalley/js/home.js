@@ -22,7 +22,7 @@ akHomeElementList.style.left = '0px';
 document.querySelector('.k-categories-holder a.right').addEventListener('click', function(e) {
     e.preventDefault();
     let newLeft = parseFloat(akHomeElementList.style.left) - akHomeStep;
-    let limit = -1 * (akHomeHolder[0].offsetWidth - (akHomeHolder[0].offsetWidth * .2));
+    let limit = -1 * ((akHomeElementsQty * akHomeStep) - akHomeHolder[0].offsetWidth);
     if (newLeft < limit) {
         newLeft = limit
     }

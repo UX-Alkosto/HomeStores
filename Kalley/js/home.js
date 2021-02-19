@@ -1,45 +1,36 @@
-let akHomeElements = document.querySelectorAll('.k-categories-list li');
-let akHomeElementsQty = akHomeElements.length;
-let akHomeHolder = document.getElementsByClassName('k-categories-holder');
-let akHomeElementList = document.getElementsByClassName('k-categories-list')[0];
-let akHomeStep = 20;
+(() => {
+    let akHomeContainer = document.querySelector('.k-categories-holder'),
+        akHomeElementList = akHomeContainer.querySelector('.k-categories-list'),
+        akHomeElements = akHomeElementList.querySelectorAll('.k-categories-list li'),
+        akHomeElementsQty = akHomeElements.length,
+        akHomeNavigation = akHomeContainer.querySelectorAll('.k-categories-navigation'),
+        akHomeStep = 20;
 
-function akHomeResize() {
-    let holderWidth = akHomeHolder[0].offsetWidth;
-    if (window.matchMedia('(min-width: 75rem)').matches) {
-        let newWidth = holderWidth * .2;
-        akHomeStep = newWidth;
-        for (let i = 0; i < akHomeElementsQty; i++) {
-            akHomeElements[i].style.flex = '0 0 ' + newWidth + 'px';
+    function akHomeResize() {
+        let holderWidth = akHomeContainer.offsetWidth
+        if (window.matchMedia('(min-width: 75rem)').matches) {
+            let newWidth = holderWidth * .2;
+            akHomeStep = newWidth;
+            [...akHomeElements].map(element => element.style.flex = `0 0 ${newWidth}px`)
         }
     }
-}
-window.addEventListener('resize', akHomeResize);
-akHomeResize();
+    window.addEventListener('resize', akHomeResize)
+    akHomeResize()
 
+    akHomeElementList.style.left = 0
 
-akHomeElementList.style.left = '0px';
-document.querySelector('.k-categories-holder a.right').addEventListener('click', function(e) {
-    e.preventDefault();
-    let newLeft = parseFloat(akHomeElementList.style.left) - akHomeStep;
-    let limit = -1 * ((akHomeElementsQty * akHomeStep) - akHomeHolder[0].offsetWidth);
-    if (newLeft < limit) {
-        newLeft = limit
-    }
-    akHomeMoveList(newLeft);
-
-
-});
-document.querySelector('.k-categories-holder a.left').addEventListener('click', function(e) {
-    e.preventDefault();
-    let newLeft = parseFloat(akHomeElementList.style.left) + akHomeStep
-    if (newLeft > 0) {
-        newLeft = 0;
-    }
-    akHomeMoveList(newLeft);
-
-});
-
-function akHomeMoveList(left) {
-    akHomeElementList.style.left = left + 'px';
-}
+    akHomeNavigation.forEach(navigation => navigation.addEventListener('click', e => {
+            e.preventDefault()
+            let newLeft = 0
+            if (navigation.classList.contains('right')) {
+                newLeft = parseFloat(akHomeElementList.style.left) - akHomeStep
+                let limit = -1 * ((akHomeElementsQty * akHomeStep) - akHomeContainer.offsetWidth)
+                if (newLeft < limit) newLeft = limit
+            } else if (navigation.classList.contains('left')) {
+                newLeft = parseFloat(akHomeElementList.style.left) + akHomeStep
+                if (newLeft > 0) newLeft = 0
+            }
+            akHomeElementList.style.left = `${newLeft}px`
+        })
+    )
+})();

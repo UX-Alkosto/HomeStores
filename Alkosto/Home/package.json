@@ -1,0 +1,16 @@
+{
+    "name": "alkostoHome",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+        "less": "^3.10.3"
+    },
+    "devDependencies": {
+        "grunt": "^1.0.4",
+        "grunt-base64-less": "^0.3.0",
+        "grunt-contrib-less": "^2.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-ssh-deploy": "^0.4.1",
+        "less-plugin-base64": "^1.2.3"
+    }
+}

@@ -1,0 +1,14 @@
+/*
+https://gist.github.com/markhowellsmead/9084c509fcfd4b829f98d72b8bd88b3e
+Thanks David <3 - https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+*/
+@for-phone-mini: ~"screen and (max-width: 20rem)"; // <= 320
+@for-phone: ~"screen and (max-width: 44.9375rem)"; // < 720
+//@for-big-phone-landscape: ~"screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape)";
+@for-big-phone-landscape: ~"only screen and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)";
+@for-tablet-only: ~"screen and (min-width: 45rem) and (max-width: 74.9375rem)"; // > 720 < 1199
+@for-tablet-portrait-only: ~"screen and (min-width: 45rem) and (max-width: 56.1875rem)"; // > 720 < 900
+@for-tablet-portrait-up: ~"screen and (min-width: 45rem)"; // > 720
+@for-tablet-landscape-up: ~"screen and (min-width: 56.25rem)"; // > 900
+@for-desktop-up: ~"screen and (min-width: 75rem)"; // > 1200
+@for-big-desktop-up: ~"screen and (min-width: 112.5rem)"; // > 1800

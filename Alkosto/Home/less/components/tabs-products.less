@@ -1,39 +1,103 @@
-.tab-filete-title-category {
-    padding: 0px;
-    padding-left: 0px !important;
-    text-align: center;
-}
-
+/* Style the tab */
 .tab-category {
-    overflow: show;
-    text-align: center;
-    margin: 0 auto;
-    font-size: @h3;
-}
-
-.nav-tabs {
-  border-bottom:none;
+  overflow: show;
+  text-align: center;
+  margin: 0 auto;
 
 }
 
-.nav {
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-    text-align: center;
+.tab-category li{
+  float: none !important;
+  clear: both !important;
+  display: inline-block;
 }
 
+/* Style the buttons inside the tab */
+.tab-category button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 9px 10px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tab-category a {
+  color:#959595 !important;
+  font-weight:bold;
+  text-decoration: none !important;
+}
+
+/* Change background color of buttons on hover */
+.tab-category .tab-title-category a:hover,
+.tab-category .tab-title-category a:active,
+.tab-category .tab-title-category a:focus {
+  color: #444444 !important;
+}
+
+/* Create an active/current tablink class */
 .tab-category .tab-title-category.active {
-    border: 1px solid var(--primary-color1);
-    margin-bottom: 0px;
-    border-radius: 4px;
-    background: var(--primary-color1);
+  border-bottom:4px solid #EB5B25;
+  margin-bottom:0px;
 }
 
 .active button.tablinks a {
-    color: var(--primary-color1) !important;
+  color: #444444 !important;
 }
 
-.tab-category .tab-title-category a:hover{
-    color: var(--alert-background-color) !important;
+/* Style the tab content */
+.tab-categorycontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.title-category{
+  color:#444444;
+  border-bottom:4px solid #EB5B25;
+  margin-bottom:0px;
+  font-weight:bold;
+  font-size: 24px;
+  padding: 9px 10px;
+  text-align: center;
+}
+
+.filete-title-category{
+  border-bottom:1px solid #DBDBDB;
+  margin-bottom:35px;
+  padding:0px;
+  padding-left:0px !important;
+  height:45px;
+  text-align: center;
+  clear: both;
+}
+
+.tab-filete-title-category{
+  border-bottom:1px solid #DBDBDB;
+  margin-bottom:35px;
+  padding:0px;
+  padding-left:0px !important;
+  height:56px;
+  text-align:center;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }

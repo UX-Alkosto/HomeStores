@@ -5,7 +5,7 @@
   margin: 0 auto;
   button {
     background-color: var(--label-background-color);
-    border: none;
+    border: solid 1px var(--primary-color1);
     outline: none;
     cursor: pointer;
     padding: 8px;
@@ -20,16 +20,15 @@
     display: inline-block;
   }
   a {
-    color:#959595 !important;
+    color:var(--primary-color1) !important;
     font-weight:bold;
     text-decoration: none !important;
   }
 }
 
-/* Style the buttons inside the tab */
-
-
-
+.nav-tabs{
+  border-bottom: none !important;
+}
 
 /* Change background color of buttons on hover */
 .tab-category .tab-title-category a:hover,

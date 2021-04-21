@@ -3,32 +3,33 @@
   overflow: show;
   text-align: center;
   margin: 0 auto;
-
-}
-
-.tab-category li{
-  float: none !important;
-  clear: both !important;
-  display: inline-block;
+  button {
+    background-color: var(--label-background-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: @h3;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  li{
+    float: none !important;
+    clear: both !important;
+    display: inline-block;
+  }
+  a {
+    color:#959595 !important;
+    font-weight:bold;
+    text-decoration: none !important;
+  }
 }
 
 /* Style the buttons inside the tab */
-.tab-category button {
-  background-color: inherit;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 9px 10px;
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-}
 
-.tab-category a {
-  color:#959595 !important;
-  font-weight:bold;
-  text-decoration: none !important;
-}
+
+
 
 /* Change background color of buttons on hover */
 .tab-category .tab-title-category a:hover,
@@ -75,12 +76,7 @@
 }
 
 .tab-filete-title-category{
-  border-bottom:1px solid #DBDBDB;
-  margin-bottom:35px;
-  padding:0px;
-  padding-left:0px !important;
-  height:56px;
-  text-align:center;
+
 }
 
 /* Style the tab content */

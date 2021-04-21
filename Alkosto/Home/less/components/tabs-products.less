@@ -4,7 +4,7 @@
   text-align: center;
   margin: 0 auto;
   button {
-    background-color: var(--label-background-color);
+    background-color: inherit;
     border: solid 1px var(--primary-color1);
     outline: none;
     cursor: pointer;
@@ -30,19 +30,16 @@
   border-bottom: none !important;
 }
 
+
+
 /* Change background color of buttons on hover */
 .tab-category .tab-title-category a:hover, .tab-category .tab-title-category a:active, .tab-category .tab-title-category a:focus {
-    background: var(--primary-color1);
-    color: var(--label-background-color) !important;
+    color: var(--primary-color1) !important;
 }
 
 /* Create an active/current tablink class */
 .tab-category .tab-title-category.active {
   margin-bottom:0px;
-}
-
-.active button.tablinks a {
-  color: var(--button-action-background-color) !important;
 }
 
 /* Style the tab content */

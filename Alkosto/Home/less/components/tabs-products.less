@@ -12,7 +12,7 @@
 }
 
 .nav-tabs {
-
+  border-bottom:none;
 }
 
 .nav {
@@ -22,7 +22,7 @@
     text-align: center;
 }
 
-.tab-category .tab-title-category.active {
+.tab-category .tab-title-category.active .tablinks{
     margin-bottom: 0px;
     background: var(--primary-color1);
     color: var(--button-primary-text-color-hover);
@@ -33,4 +33,10 @@
     margin-bottom: -1px;
     display: inline-block;
     margin: 0 8px;
+}
+
+.tab-category .tab-title-category a:hover, .tab-category .tab-title-category a:active, .tab-category .tab-title-category a:focus {
+    color: #444444 !important;
+    background: var(--primary-color1);
+    color: var(--button-primary-text-color-hover);
 }

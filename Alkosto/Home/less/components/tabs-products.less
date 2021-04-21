@@ -1,7 +1,6 @@
 .tab-filete-title-category {
     padding: 0px;
     padding-left: 0px !important;
-    height: 56px;
     text-align: center;
 }
 
@@ -9,19 +8,29 @@
     overflow: show;
     text-align: center;
     margin: 0 auto;
+    font-size: @h3;
 }
 
 .nav-tabs {
-    border-bottom: 1px solid #ddd;
+
 }
 
 .nav {
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
+    text-align: center;
 }
 
 .tab-category .tab-title-category.active {
-    border-bottom: 4px solid #EB5B25;
     margin-bottom: 0px;
+    background: var(--primary-color1);
+    color: var(--button-primary-text-color-hover);
+}
+
+.nav-tabs>li {
+    float: none;
+    margin-bottom: -1px;
+    display: inline-block;
+    margin: 0 8px;
 }

@@ -11,6 +11,9 @@
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+  @media @for-tablet-only{
+    width:90%;
+  }
   @media @for-phone{
     width: 90%;
   }
@@ -51,6 +54,10 @@
   @media @for-phone{
      width: 69%;
     margin: 8px !important;
+  }
+  @media @for-tablet-only{
+    width: 26%;
+    height: 218px;
   }
 }
 .primero{
@@ -109,6 +116,9 @@
     @media @for-phone{
       grid-template-columns: repeat(14, 1fr);
     }
+    @media @for-tablet-only{
+      grid-template-columns: repeat(14, 1fr);
+    }
     div{
       border: solid 1px var(--primary-color2);
       text-align: center;
@@ -157,9 +167,6 @@
     margin: 36px 0;
     div{
       height: 416px;
-      @media @for-phone-mini{
-        height: 350px;
-      }
     }
 
 

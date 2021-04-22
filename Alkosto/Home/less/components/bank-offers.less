@@ -1,4 +1,9 @@
 // Layout Section ofertas de banco
+.contenedor_home_bancos{
+    @media @for-phone-mini{
+        width: 100%;
+    }
+}
 
 .ctn-ofertas-banco{
     display: flex;
@@ -6,7 +11,7 @@
     height: 400px;
     justify-content: space-between;
     margin-top: 40px;
-    @media @for-tablet-only{
+    @media @for-tablet-portrait-up{
         flex-direction: row;
     }
     

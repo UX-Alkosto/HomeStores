@@ -5,6 +5,12 @@
     justify-content: space-between;
     color: #444444;
     background: linear-gradient(to right, #cccccc, #ffffff);
+    @media @for-tablet-landscape-up{
+        height: 309px;
+    }
+    @media @for-desktop-up{
+        height: 427px;
+    }
 }
 
 .info-banner-big {
@@ -24,16 +30,26 @@
     font-size: 18px;
     font-weight: bold;
     margin-top: 25px;
-    line-height: 0px;
+    line-height: 5px;
+    @media @for-desktop-up{
+        font-size: 30px;
+        margin-top: 55px;
+        line-height: 19px;
+    }
 }
+
 
 .title-banner-big>p>span {
     color: var(--primary-color1);
+    font-weight: bold;
 }
 
 .title-banner-big>span {
     font-size: 12px;
     font-weight: normal;
+    @media @for-desktop-up{
+        font-size: 28px;   
+    }
 }
 
 .price-banner-big {
@@ -48,6 +64,9 @@
             border: 1px solid var(--primary-color1);
             border-radius: 5px;
             padding: 0 8px;
+            color: var(--primary-color1);
+            font-weight: bold;
+            width: 150px;
         }
         span{
             color: var(--primary-color1);

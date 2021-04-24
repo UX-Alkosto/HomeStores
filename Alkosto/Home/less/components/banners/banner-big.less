@@ -5,6 +5,12 @@
     justify-content: space-between;
     color: #444444;
     background: linear-gradient(to right, #cccccc, #ffffff);
+    @media @for-tablet-landscape-up{
+        height: 309px;
+    }
+    @media @for-desktop-up{
+        height: 427px;
+    }
 }
 
 .info-banner-big {
@@ -24,16 +30,26 @@
     font-size: 18px;
     font-weight: bold;
     margin-top: 25px;
-    line-height: 0px;
+    line-height: 5px;
+    @media @for-desktop-up{
+        font-size: 30px;
+        margin-top: 55px;
+        line-height: 19px;
+    }
 }
+
 
 .title-banner-big>p>span {
     color: var(--primary-color1);
+    font-weight: bold;
 }
 
 .title-banner-big>span {
     font-size: 12px;
     font-weight: normal;
+    @media @for-desktop-up{
+        font-size: 28px;   
+    }
 }
 
 .price-banner-big {
@@ -42,12 +58,23 @@
         font-size: 12px;
         margin-top: 0px;
         margin-bottom: 0px;
+        @media @for-desktop-up{
+            font-size: 15px;
+        }
         &:last-child{
-            font-size: 28px;
             background: white;
-            border: 1px solid var(--primary-color1);
             border-radius: 5px;
+            border: 1px solid var(--primary-color1);
+            color: var(--primary-color1);
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: auto;
             padding: 0 8px;
+            width: 150px;
+            @media @for-desktop-up{
+                font-size: 38px;
+                width: 210px;
+            }
         }
         span{
             color: var(--primary-color1);
@@ -67,4 +94,7 @@
 .legal-banner-big {
     font-size: 8px;
     margin-top: 20px;
+   @media @for-tablet-landscape-up {
+       font-size: 15px;
+   } 
 }

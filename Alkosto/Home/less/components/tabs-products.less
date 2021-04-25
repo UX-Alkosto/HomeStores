@@ -21,6 +21,9 @@
     clear: both !important;
     display: inline-block;
     margin: 0 8px;
+    @media @for-phone{
+      margin: 0 3px;
+    }
   }
   a {
     color:var(--primary-color1) !important;
@@ -117,4 +120,12 @@
 
 .azul .active button {
     background: var(--primary-color2);
+}
+
+.azul .tab-category button {
+    border: solid 1px var(--primary-color2);
+}
+
+.azul .tab-category a {
+    color: var(--primary-color2) !important;
 }

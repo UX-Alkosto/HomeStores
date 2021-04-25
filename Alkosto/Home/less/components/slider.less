@@ -5,6 +5,9 @@
       top: -9px;
       left: -139px;
     }
+    @for-phone-mini{
+        left: -99px
+    }
 }
 .owl-carousel .owl-dots .active span {
     background-color: var(--primary-color1) !important;
@@ -12,8 +15,17 @@
 
 .owl-carousel.rotativeBanner .owl-nav button.owl-next, .owl-carousel.rotativeBanner .owl-nav button.owl-prev {
   @media @for-phone{
-    bottom: 250px !important;
-    background: white !important;
-    padding: 32px 16px !important;
+    bottom: 0px !important;
+    background: transparent !important;
+    padding: 26px 16px !important;
+  }
+}
+
+.owl-carousel.rotativeBanner .owl-nav button.owl-prev {
+  @media @for-phone{
+    left: 344px;
+  }
+  @for-phone-mini{
+      left: 257px;
   }
 }

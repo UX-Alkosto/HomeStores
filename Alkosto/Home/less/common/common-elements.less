@@ -60,7 +60,7 @@
     margin: 8px !important;
   }
   @media @for-tablet-only{
-    width: 26%;
+    width: 37%;
     height: 218px;
   }
 }
@@ -69,11 +69,17 @@
   @media @for-phone{
     margin-left: 8px !important;
   }
+  @media @for-tablet-only{
+      margin-left: 8px !important;
+  }
 }
 .ultimo{
   margin-right: 0 !important;
   @media @for-phone{
     margin-right: 8px !important;
+  }
+  @media @for-tablet-only{
+      margin-right: 8px !important;
   }
 }
 .sombra{
@@ -135,6 +141,9 @@
       @media @for-phone-mini{
          font-size: 14px;
       }
+      @media @for-tablet-only{
+          width: 145px;
+      }
       &:hover{
         background: #EDF1F6;
       }
@@ -186,4 +195,8 @@
 .barra-lanzamientos{
     height: 67px;
     margin-top: 36px;
+    @media @for-tablet-only{
+      height: 108px;
+      text-align: center;
+    }
 }

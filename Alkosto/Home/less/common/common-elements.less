@@ -94,11 +94,14 @@
   color: var(--alert-text-color);
   h3{
     margin: 0;
-    font-size: @h2;
+    font-size: 28px;
     border-bottom: solid 2px var(--primary-color1);
     width: fit-content;
     margin: 0 auto;
     line-height: 32px;
+    @media @for-phone{
+      font-size: 22px;
+    }
   }
   .ico-font {
       font-size: @h5;
@@ -136,13 +139,14 @@
       background: var(--label-background-color);
       height: 114px;
       @media @for-phone{
-        width: 160px;
+        width: 140px;
       }
       @media @for-phone-mini{
-         font-size: 14px;
+         font-size: 12px;
+         width: 130px;
       }
       @media @for-tablet-only{
-          width: 145px;
+          width: 138px;
       }
       &:hover{
         background: #EDF1F6;
@@ -150,10 +154,13 @@
     }
     div h4{
       font-size: @h5;
+      @media @for-phone{
+        font-size: 13px;
+      }
     }
 }
 .ico-font {
-    font-size: 60px;
+    font-size: 56px;
     margin-top: 12px;
     margin-bottom: 13px;
     color: var(--primary-color2);

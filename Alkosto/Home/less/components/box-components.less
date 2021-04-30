@@ -57,7 +57,10 @@
 
 .owl-carousel .owl-stage-outer .owl-stage .owl-item {
     padding: 8px;
-
+    @media @for-phone{
+    width: 100% !important;
+    max-width: 300px;
+  }
 }
 
 .contenedor_home .owl-carousel .owl-stage-outer .owl-stage .owl-item{
@@ -68,4 +71,20 @@
     text-transform: capitalize;
     height: auto;
     overflow: hidden;
+}
+
+.carousel__common-component .owl-stage {
+    border-bottom: none !important;
+}
+
+.carousel__headline {
+    border-top: none;
+    color: #444;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 16px;
+    padding: 36px 0 0;
+    text-align: center;
+    width: calc(100% - 32px);
 }

@@ -25,6 +25,10 @@
     margin-left: auto;
     padding: 10px;
 }
+.logo-banner-big-blue{
+    &:extend(.logo-banner-big);
+    background: var(--primary-color2);
+}
 
 .title-banner-big {
     font-size: 18px;
@@ -41,6 +45,10 @@
 
 .title-banner-big>p>span {
     color: var(--primary-color1);
+    font-weight: bold;
+}
+.title-banner-big-blue>p>span{
+    color: var(--primary-color2);
     font-weight: bold;
 }
 
@@ -81,6 +89,16 @@
         }
     }
 }
+.price-banner-big-blue{
+    &:extend(.price-banner-big);
+    &:last-child{
+        border: 1px solid var(--primary-color2);
+        color: var(--primary-color2);
+    }
+    span{
+        color: var(--primary-color2);
+    }
+}
 
 .img-banner-big {
     width: 50%;
@@ -112,12 +130,16 @@
         margin: 0px;
     }
 }
+.label-new-blue{
+    &:extend(.label-new);
+    background: var(--primary-color1);
+}
 .label-discount{
     position: absolute;
     right: 0px;
     bottom: 20px;
     color: white;
-    background: #eb5b24;
+    background: var(--primary-color1);
     text-align: center;
     padding: 12px 5px 5px 5px;
     width: 85px;
@@ -133,4 +155,12 @@
         font-size: 12px;
         font-weight: normal;
     }
+}
+.label-discount-blue{
+    &:extend(.label-discount);
+    background: var(--primary-color2);
+}
+.label-discount-blue{
+    &:extend(.label-discount);
+    background: var(--primary-color2);
 }

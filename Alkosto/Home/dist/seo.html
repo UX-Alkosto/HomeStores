@@ -3,9 +3,12 @@
         background: #f9f9f9;
     }
     
-    .seo-container {
+    .seoContainer {
         padding-bottom: 20px;
         padding-top: 20px;
+        overflow: hidden;
+        height: 324px;
+        transition: all 0.3s;
     }
     
     .seo-footer-text {
@@ -30,6 +33,31 @@
         border-right: 1px solid #ccc;
     }
     
+    .btnMasSeo {
+        display: block;
+        text-align: center;
+        height: 50px;
+        position: absolute;
+        font-size: 14px;
+        z-index: 2;
+        bottom: -11px;
+        left: 0px;
+        background: -webkit-linear-gradient(top, rgb(249 249 249 / 65%) 0%, rgba(173, 173, 173, 1) 100%);
+        color: #444444;
+        font-weight: bold;
+        line-height: 50px;
+        width: 100%;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .seoContainer {
+            height: auto !important;
+        }
+        .btnMasSeo {
+            display: none;
+        }
+    }
+    
     @media screen and (max-width: 768px) {
         .border-box {
             border-right: 0px !important;
@@ -37,74 +65,123 @@
     }
 </style>
 <div class="row seo-row">
-    <div class="container seo-container">
+    <div class="container seoContainer">
         <div class="col-12">
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="info-container border-box">
-                    <h3 class="seo-footer-title">Alkosto hiper ahorro</h3>
+                    <h3 class="seo-footer-title">Alkosto Hiper Ahorro</h3>
 
-                    <h4 class="seo-footer-subtitle">Los mejores <a class="seo-link" href="/celulares/telefonos-celulares/c/BI_101_KTRON" title="Celulares Ktronix">celulares</a>:</h4>
+                    <h4 class="seo-footer-subtitle">Marcas top en
+                        <a class="seo-link" href="#" title="Celulares Ktronix">celulares</a>:
+                    </h4>
 
-                    <p class="seo-footer-text"><a class="seo-link" href="https://www.ktronix.com/celulares/telefonos-celulares/iphone/c/BI_M009_KTRON" tittle="Iphone">iPhone</a>, <a class="seo-link" href="https://www.ktronix.com/celulares/telefonos-celulares/samsung/c/BI_M017_KTRON"
-                            tittle="Samsung">Samsung</a>, <a class="seo-link" href="https://www.ktronix.com/celulares/telefonos-celulares/xiaomi/c/BI_M021_KTRON" tittle="Xiaomi">Xiaomi</a>, <a class="seo-link" href="https://www.ktronix.com/celulares/telefonos-celulares/motorola/c/BI_M015_KTRON"
-                            tittle="Motorola">Morotola</a>, <a class="seo-link" href="https://www.ktronix.com/celulares/telefonos-celulares/huawei/c/BI_M008_KTRON" tittle="Huawei">Huawei</a> y <a class="seo-link" href="https://www.ktronix.com/celulares/telefonos-celulares/asus/c/BI_M002_KTRON"
-                            tittle="Asus">Asus</a>.</p>
+                    <p class="seo-footer-text">
+                        <a class="seo-link" href="#" tittle="Iphone">iPhone</a>,
+                        <a class="seo-link" href="#" tittle="Samsung">Samsung</a>,
+                        <a class="seo-link" href="#" tittle="Xiaomi">Xiaomi</a>,
+                        <a class="seo-link" href="#" tittle="Motorola">Morotola</a>,
+                        <a class="seo-link" href="#" tittle="Huawei">Huawei</a> y
+                        <a class="seo-link" href="#" tittle="Asus">Asus</a>.
+                    </p>
 
-                    <h4 class="seo-footer-subtitle">E increibles complementos:</h4>
+                    <h4 class="seo-footer-subtitle">Electrodomésticos para renovar tu hogar:</h4>
 
-                    <p class="seo-footer-text"><a class="seo-link" href="/audio/audifonos/c/BI_111_KTRON?q=%3Arelevance%3Abrand%3AAPPLE#" title="Audífonos Airpods Ktronix">Airpods</a>, <a class="seo-link" href="/smartwatch/c/BI_SMAW_KTRON" title="Smartwatch y relojes inteligentes Ktronix">Smartwatch</a>                        y <a class="seo-link" href="/computadores-tablets/tablets-ipads/c/BI_107_KTRON" title="tablets y iPad Ktronix">tablets</a>.</p>
+                    <p class="seo-footer-text">
+                        <a class="seo-link" href="#" title="Neveras">Neveras</a>,
+                        <a class="seo-link" href="#" title="Nevecones">Nevecones</a>,
+                        <a class="seo-link" href="#" title="Lavadoras">Lavadoras</a>,
+                        <a class="seo-link" href="#" title="Estufas">Estufas</a> y
+                        <a class="seo-link" href="#" title="Hornos">Hornos</a>.
+                    </p>
 
-                    <h4 class="seo-footer-subtitle">Los m&aacute;s vendidos:</h4>
+                    <h4 class="seo-footer-subtitle">Televisores para entretenerte en familia</h4>
 
-                    <p class="seo-footer-text"><a class="seo-link" href="/celulares/telefonos-celulares/c/BI_101_KTRON?q=%3Arelevance%3Abrand%3AAPPLE%3Afamilia-celulares%3AiPhone+XS+Max" title="iPhone XS Max Ktronix">iPhone XS Max</a>, <a class="seo-link" href="/celulares/telefonos-celulares/c/BI_101_KTRON?q=%3Arelevance%3Abrand%3ASAMSUNG#"
-                            title="Celulares Samsung Ktronix">Samsung</a>, <a class="seo-link" href="/celulares/telefonos-celulares/c/BI_101_KTRON?q=%3Arelevance%3Abrand%3AMOTOROLA%3Afamilia-celulares%3AOne+Fusion%3Afamilia-celulares%3AOne+Hyper" title="Celulares Motorola One Ktronix">Moto One</a>.</p>
+                    <p class="seo-footer-text">
+                        <a class="seo-link" href="#" title="">Televisores</a>,
+                        <a class="seo-link" href="#" title="">barras de sonido</a> y
+                        <a class="seo-link" href="#" title="">consolas de videojuegos</a>.
+                    </p>
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="info-container border-box">
-                    <h3 class="seo-footer-title">Ktronix <a class="seo-link" href="/electrodomesticos/c/BI_ELHO_KTRON" seo-link="" title="Ofertas y descuentos Ktronix">Electrodomésticos</a></h3>
+                    <h3 class="seo-footer-title">Encuentra en Alkosto todo para tu
+                        <a class="seo-link" href="#" seo-link="" title="">hogar</a>
+                    </h3>
 
-                    <h4 class="seo-footer-subtitle">Precios increibles para renovar tu hogar:</h4>
+                    <h4 class="seo-footer-subtitle">Ahorra mientras renuevas tus espacios</h4>
 
                     <p class="seo-footer-text">
-                        <a class="seo-link" href="/electrodomesticos/grandes-electrodomesticos/refrigeracion/neveras/c/BI_A29_KTRON" title="Neveras en Ktronix">Neveras</a>,
-                        <a class="seo-link" href="/electrodomesticos/grandes-electrodomesticos/refrigeracion/nevecones/c/BI_A32_KTRON" title="Nevecones en Ktronix">Nevecones</a>,
-                        <a class="seo-link" href="/electrodomesticos/grandes-electrodomesticos/electrodomesticos-cocina/estufas/c/BI_A20_KTRON" title="Estufas en Ktronix">Estufas</a>,
-                        <a class="seo-link" href="/electrodomesticos/grandes-electrodomesticos/cocina/hornos-empotrar/c/BI_A21_KTRON" title="Hornos en Ktronix">hornos</a>.</p>
+                        <a class="seo-link" href="#" title="">Muebles</a>,
+                        <a class="seo-link" href="#" title="">Sofás</a>,
+                        <a class="seo-link" href="#" title="">Colchones</a>,
+                        <a class="seo-link" href="#" title="">Camas</a>,
+                        <a class="seo-link" href="#" title="">Decoración</a> y más.
 
-                    <h4 class="seo-footer-subtitle">Imperdibles para facilitar tu vida:</h4>
 
-                    <p class="seo-footer-text"><a class="seo-link" href="/electrodomesticos/pequenos-electrodomesticos/preparacion-alimentos/freidoras-aire/c/BI_A11_KTRON" title="AirFryer Ktronix">AirFryer</a>, <a class="seo-link" href="/electrodomesticos/pequenos-electrodomesticos/preparacion-alimentos/ollas-arroceras-multicoccion/c/BI_A10_KTRON"
-                            title="Ollas Multiusos Ktronix">Ollas Multiusos</a>, <a class="seo-link" href="/electrodomesticos/pequenos-electrodomesticos/preparacion-alimentos/tostadoras/c/BI_A07_KTRON" title="Tostadora Ktronix">Tostadora</a>, <a class="seo-link"
-                            href="/electrodomesticos/pequenos-electrodomesticos/cuidado-del-hogar/aspiradoras-hidrolavadoras/c/BI_A16_KTRON?q=%3Arelevance%3Atipo-producto-cuidado-pisos%3AAspiradora#" title="Aspiradora Robot Ktronix">Aspiradora Robot</a>.</p>
+                        <h4 class="seo-footer-subtitle">Lo que necesitas en tecnología para tu hogar.</h4>
 
-                    <h4 class="seo-footer-subtitle">Que no falte el ejercicio y la diversi&oacute;n:</h4>
+                        <p class="seo-footer-text">
+                            <a class="seo-link" href="#" title="AirFryer Ktronix">AirFryer</a>,
+                            <a class="seo-link" href="#" title="Ollas Multiusos Ktronix">Ollas Multiusos</a>,
+                            <a class="seo-link" href="#" title="Tostadora Ktronix">Tostadora</a>,
+                            <a class="seo-link" href="#" title="Aspiradora Robot Ktronix">Aspiradora Robot</a>.
+                        </p>
 
-                    <p class="seo-footer-text"><a class="seo-link" href="/marcas/playstation/c/playstation" title="PlayStation Ktronix">PlayStation</a>, <a class="seo-link" href="/marcas/xbox/c/xbox" title="XBOX Ktronix">Xbox</a>, <a class="seo-link" href="/marcas/netflix/c/netflix"
-                            title="Netflix Ktronix">Netflix</a>, <a class="seo-link" href="/deportes/ejercicio-fitness/caminadoras-trotadoras/c/BI_1280_KTRON" title="Trotadoras Ktronix">trotadoras</a>, <a class="seo-link" href="/deportes/movilidad/bicicletas-adulto/c/BI_1240_KTRON"
-                            title="Bicicletas Ktronix">bicicletas</a>.</p>
+                        <h4 class="seo-footer-subtitle">Todo para mantenerte activo y ejercitado:</h4>
+
+                        <p class="seo-footer-text">
+                            <a class="seo-link" href="/marcas/playstation/c/playstation" title="PlayStation Ktronix">Trotadoras</a>,
+                            <a class="seo-link" href="/marcas/xbox/c/xbox" title="XBOX Ktronix">elipticas</a>,
+                            <a class="seo-link" href="/marcas/netflix/c/netflix" title="Netflix Ktronix">caminadoras</a>,
+                            <a class="seo-link" href="/deportes/ejercicio-fitness/caminadoras-trotadoras/c/BI_1280_KTRON" title="Trotadoras Ktronix">bicicletas estaticas</a> y
+                            <a class="seo-link" href="/deportes/movilidad/bicicletas-adulto/c/BI_1240_KTRON" title="Bicicletas Ktronix">accesorios deportivos</a>.
+                        </p>
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="info-container">
-                    <h3 class="seo-footer-title">Ktronix <a class="seo-link" href="/ofertas" title="Ofertas y descuentos Ktronix">Ofertas</a> especiales</h3>
-                    <!--h4 class="seo-footer-subtitle">¡<a class="seo-link" href="/ofertas" title="Ofertas y descuentos Ktronix">Ofertas</a> en Septiembre!</h4-->
-                    <!--p class="seo-footer-text">Lo mejor de <a class="seo-link" href="/marcas/samsung/bluesale/c/bluesale" title="Blueweek Samsung Ktronix">Samsung</a> en el <a class="seo-link" href="/marcas/samsung/bluesale/c/bluesale" title="Blueweek Samsung Ktronix">BLUE WEEK</a>.</p-->
-                    <!--h4 class="seo-footer-subtitle">Nuestras <a class="seo-link" href="/temporadas/c/temporadas" title="Temporadas especiales Ktronix">temporadas especiales</a></h4>
-<p class="seo-footer-text">El evento tecno del mes <a class="seo-link" href="/temporadas/expotronika/c/expotronika" title="Expotrónica Ktronix">Expotr&oacute;nica</a>.</p-->
+                    <h3 class="seo-footer-title">Alkosto
+                        <a class="seo-link" href="/ofertas" title="Ofertas y descuentos Ktronix">Ofertas</a> especiales</h3>
 
-                    <h4 class="seo-footer-subtitle">Conoce nuestras <a class="seo-link" href="/marcas/c/marcas" title="Nuestars marcas Ktronix">marcas</a> aliadas</h4>
+                    <h4 class="seo-footer-subtitle">Renueva tu computador al mejor precio</h4>
 
-                    <p class="seo-footer-text"><a class="seo-link" href="/marcas/apple/c/apple" title="Apple Ktronix">Apple</a>, <a class="seo-link" href="/marcas/samsung/c/samsung" title="Celulares Samsung Ktronix">Samsung</a>, <a class="seo-link" href="/marcas/lg/c/lg" title="LG Ktronix">LG</a>,
-                        <a class="seo-link" href="/marcas/bose/c/bose" title="Bose Ktronix">Bose</a>, <a class="seo-link" href="/marcas/huawei/c/huawei" title="Huawei Ktronix">Huawei</a>, <a class="seo-link" href="/marcas/kalley/c/kalley" title="Kalley Ktronix">Kalley</a>,
-                        <a class="seo-link" href="/marcas/panasonic/c/panasonic" title="Panasonic Ktronix">Panasonic</a> y m&aacute;s.</p>
+                    <p class="seo-footer-text">
+                        <a class="seo-link" href="/marcas/apple/c/apple" title="Apple Ktronix">Portátiles</a>,
+                        <a class="seo-link" href="/marcas/samsung/c/samsung" title="Celulares Samsung Ktronix">PC escritorio</a>,
+                        <a class="seo-link" href="/marcas/lg/c/lg" title="LG Ktronix">impresoras</a> y
+                        <a class="seo-link" href="/marcas/bose/c/bose" title="Bose Ktronix">Routers - Wifi </a>.
+                    </p>
 
-                    <h3 class="seo-footer-title"><a class="seo-link" href="/temporadas/hotsale/c/hotsale" title="Hot Sale">Hot Sale</a></h3>
-                    <p class="seo-footer-text"><a class="seo-link" href="/temporadas/hotsale/c/hotsale" title="Hot Sale">Regístrate</a> para conocer lo que tenemos en nuestro Hot Sale 2021</p>
+                    <h4 class="seo-footer-subtitle">Descubre los últimos lanzamientos</h4>
+
+                    <p class="seo-footer-text">
+                        <a class="seo-link" href="/marcas/apple/c/apple" title="Apple Ktronix">Xbox</a>,
+                        <a class="seo-link" href="/marcas/samsung/c/samsung" title="Celulares Samsung Ktronix">Samsung</a>,
+                        <a class="seo-link" href="/marcas/lg/c/lg" title="LG Ktronix">LG</a>,
+                        <a class="seo-link" href="/marcas/bose/c/bose" title="Bose Ktronix">HP</a>,
+                        <a class="seo-link" href="/marcas/bose/c/bose" title="Bose Ktronix">PlayStation</a>,
+                        <a class="seo-link" href="/marcas/bose/c/bose" title="Bose Ktronix">Bose</a>,
+                        <a class="seo-link" href="/marcas/bose/c/bose" title="Bose Ktronix">Apple</a>,
+                        <a class="seo-link" href="/marcas/bose/c/bose" title="Bose Ktronix">Huawei</a> y más.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div onClick="openSeo()" class="btnMasSeo">
+    Ver más
+</div>
+
+<script>
+    function openSeo() {
+        seoContainer = document.getElementsByClassName('seoContainer')[0];
+        seoContainer.style.height = '780px';
+
+        btnMasSeo = document.getElementsByClassName('btnMasSeo')[0];
+        btnMasSeo.style.display = 'none';
+    }
+</script>

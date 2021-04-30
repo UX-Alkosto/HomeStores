@@ -5,6 +5,7 @@
     justify-content: space-between;
     color: #444444;
     background: linear-gradient(to right, #cccccc, #ffffff);
+    position: relative;
     @media @for-tablet-landscape-up{
         height: 309px;
     }
@@ -111,6 +112,9 @@
     p{
         margin: 0px;
     }
+    @media @for-desktop-up{
+        font-size: 22px
+    }
 }
 .label-discount{
     position: absolute;
@@ -133,4 +137,18 @@
         font-size: 12px;
         font-weight: normal;
     }
+    @media @for-desktop-up{
+        padding: 22px 5px 5px 5px;
+        width: 117px;
+        p{
+            font-size: 50px;
+        }
+        span{
+            font-size: 15px;
+        }
+    }
+}
+
+.ocultar{
+    display: @ocultar
 }

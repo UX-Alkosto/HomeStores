@@ -206,6 +206,10 @@
     div{
       height: 416px;
       width: 312px;
+      @media @for-tablet-only{
+        height: 240px;
+        width: 171px;
+      }
     }
     @media @for-phone{
       display: none;
@@ -235,6 +239,9 @@
 
 .display_mobile{
   display:none;
+  @media @for-tablet-only{
+      display: none;
+  }
   @media @for-phone{
     display: block;
     margin-top: 36px;

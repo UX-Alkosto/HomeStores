@@ -5,6 +5,7 @@
     justify-content: space-between;
     color: #444444;
     background: linear-gradient(to right, #cccccc, #ffffff);
+    position: relative;
     @media @for-tablet-landscape-up{
         height: 309px;
     }
@@ -123,11 +124,14 @@
     color: white;
     background: var(--primary-color2);
     font-size: 15px;
-    padding: 3px 10px;
+    padding: 0px 10px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     p{
         margin: 0px;
+    }
+    @media @for-desktop-up{
+        font-size: 25px;
     }
 }
 .label-new-blue{
@@ -150,10 +154,20 @@
         font-size: 30px;
         margin: 0px;
         font-weight: bold;
+        @media @for-desktop-up{
+            font-size: 50px;
+        }
     }
     span{
         font-size: 12px;
         font-weight: normal;
+        @media @for-desktop-up{
+            font-size: 16px;
+        }
+    }
+    @media @for-desktop-up{
+        padding: 21px 5px 5px 5px;
+        width: 124px;
     }
 }
 .label-discount-blue{

@@ -94,9 +94,11 @@
 }
 .price-banner-big-blue{
     &:extend(.price-banner-big);
-    &:last-child{
-        border: 1px solid var(--primary-color2);
-        color: var(--primary-color2);
+    p{
+        &:last-child{
+            border: 1px solid var(--primary-color2);
+            color: var(--primary-color2);
+        }
     }
     span{
         color: var(--primary-color2);
@@ -130,12 +132,12 @@
     background: var(--primary-color2);
     font-size: 15px;
     text-align: center;
-    margin-top: 5px;
-    padding: 4px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    margin-top: 8px;
+    padding: 0px 5px;
+    border-radius: 4px;
     width: 70%;
     p{
+        font-weight: bold;
         margin: 0px;
     }
     @media @for-desktop-up{

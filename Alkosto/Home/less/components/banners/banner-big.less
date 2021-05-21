@@ -2,7 +2,7 @@
     display: none;
 }
 .ctn-banner-big {
-    background: linear-gradient(to right, #cccccc, #ffffff);
+    background: linear-gradient(to right, #ffffff, #f8c5b1);
     color: #444444;
     display: flex;
     flex-wrap: wrap;
@@ -16,6 +16,11 @@
     @media @for-desktop-up{
         height: 427px;
     }
+}
+
+.ctn-banner-big-blue{
+    &:extend(.ctn-banner-big all);
+    background: linear-gradient(to right, #ffffff, #92c9e0);
 }
 
 .info-banner-big {
@@ -141,8 +146,15 @@
     margin-top: 5px;
     padding: 6px;
     img{
-        width: 27px;
+        width: 27px !important;
         float: left;
+        margin-left: 15px;
+    }
+    p{
+        margin-left: 57px;
+        font-size: 15px;
+        border-left: 1px solid white;
+        padding-left: 15px;
     }
 }
 
@@ -246,7 +258,7 @@
         top: 185px;
         opacity: 1;
         @media @for-tablet-landscape-up{
-            top: 250px;
+            top: 230px;
         }
     }
     &:hover .legal-banner-big{

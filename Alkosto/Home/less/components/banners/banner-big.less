@@ -126,7 +126,10 @@
 }
 
 .ctn-prices{
-    width: 100%;
+    width: 50%;
+    position: absolute;
+    top: 200px;
+    opacity: 0;
 }
 .ctn-price-bank{
     background: #005DAA;
@@ -225,5 +228,9 @@
 
     &:hover .cta-hover{
         opacity: 0;
+}
+&:hover .ctn-prices{
+    top: 250px;
+    opacity: 1;
 }
 }

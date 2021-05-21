@@ -148,6 +148,10 @@
     padding: 0px 15px;
     text-align: center;
     width: 100%;
+    position: absolute;
+    bottom: 20px;
+    opacity: 0;
+    transition: all 0.3s;
    @media @for-tablet-landscape-up {
        font-size: 15px;
    } 
@@ -215,7 +219,7 @@
     text-decoration: underline;
     width: 100%;
     transition: all 0.3s;
-    & .icon-font{
+    .icon-font{
         color: var(--primary-color1);
         font-size: 10px;
         display: inline-block;
@@ -232,12 +236,15 @@
             bottom: 55px;
             opacity: 0;
     }
-
     &:hover .cta-hover{
         opacity: 0;
-}
-&:hover .ctn-prices{
-    top: 250px;
-    opacity: 1;
-}
+    }
+    &:hover .ctn-prices{
+        top: 250px;
+        opacity: 1;
+    }
+    &:hover .legal-banner-big{
+        bottom: 10px;
+        opacity: 1;
+    }
 }

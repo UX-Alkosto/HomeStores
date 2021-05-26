@@ -45,7 +45,7 @@
   background: white;
   width: 18.7%;
   height: 200px;
-  margin: -32px 8px 0 8px;
+  margin: -32px 8px 0 8px ;
   position: relative;
   z-index: 1;
   text-align: center;
@@ -78,8 +78,22 @@
     margin: 8px !important;
   }
   @media @for-tablet-only{
-    width: 37%;
+    width: 35%;
     height: 218px;
+    margin: 8px;
+  }
+  @media @for-tablet-landscape-up{
+    width: 25%;
+    height: 207px;
+    margin: 8px;
+  }
+  @media @for-desktop-up{
+    width: 18.7%;
+    height: 200px;
+    margin: -32px 8px 0 8px !important;
+  }
+  @media @for-desktop-up{
+      margin: -32px 8px 0 8px !important;
   }
 }
 .primero{
@@ -210,10 +224,18 @@
         height: 240px;
         width: 171px;
       }
+      @media @for-tablet-landscape-up{
+        height: 318px;
+        width: 225px;
+      }
+      @media @for-desktop-up{
+        height: 418px;
+        width: 305px;
+      }
     }
     @media @for-phone{
       display: none;
-    } 
+    }
 
 }
 

@@ -8,7 +8,7 @@
     border: solid 1px var(--primary-color1);
     outline: none;
     cursor: pointer;
-    padding: 8px; 
+    padding: 8px;
     font-size: @h3;
     text-align: center;
     font-weight: bold;
@@ -49,6 +49,22 @@
   border-bottom: none !important;
 }
 
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #929292;
+    background-color: transparent;
+    border: transparent;
+    border-bottom-color: transparent;
+    cursor: default;
+    padding: 0;
+}
+
+.nav-tabs>li>a {
+    margin-right: 0;
+    line-height: 1.42857143;
+    border: transparent;
+    border-radius: 0;
+    padding: 0;
+}
 
 
 
@@ -161,6 +177,7 @@
 
 .azul button.tablinks{
     border: solid 1px var(--primary-color2);
+        color: var(--primary-color2);
 }
 
 .azul button.tablinks a {

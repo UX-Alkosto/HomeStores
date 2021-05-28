@@ -1,7 +1,6 @@
 <link href="https://cdn.jsdelivr.net/gh/UX-Alkosto/HomeStores@master/Alkosto/Home/dist/css/styles.css" rel="stylesheet">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/gh/ux-alkosto/webcomponents/dist/components.js">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <script type="module" src="https://cdn.jsdelivr.net/gh/ux-alkosto/webcomponents/dist/components.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <div class="contenedor_home confianza">
 
     <div class="scrollhorizontal">
@@ -317,26 +316,46 @@
         <div class="tab-content">
 
             <div id="Celulares" class="tab-pane fade in active">
-              <k-slider desktop-arrows="true" mobile-arrows="true" bullets="true" desktop-items="7" mobile-items="3" peek="100" style="--k-slider-background-color: #f5f5f5;">
-                  <div class="k-slider__slide">
-                      <img loading="lazy" title="Samsung" src="https://cdn.jsdelivr.net/gh/ux-alkosto/webcomponents/assets/images/Samsung.svg" />
-                  </div>
-                  <div class="k-slider__slide">
-                      <img loading="lazy" title="LG" src="https://cdn.jsdelivr.net/gh/ux-alkosto/webcomponents/assets/images/LG.svg" />
-                  </div>
-                  <div class="k-slider__slide">
-                      <img loading="lazy" title="Mabe" src="https://cdn.jsdelivr.net/gh/ux-alkosto/webcomponents/assets/images/mabe.svg" />
-                  </div>
-                  <div class="k-slider__slide">
-                      <img loading="lazy" title="Challenger" src="https://cdn.jsdelivr.net/gh/ux-alkosto/webcomponents/assets/images/challenger.svg" />
-                  </div>
-                  <div class="k-slider__slide">
-                      <img loading="lazy" title="Whirlpool" src="https://cdn.jsdelivr.net/gh/ux-alkosto/webcomponents/assets/images/Whirlpool.svg" />
-                  </div>
-                  <div class="k-slider__slide">
-                      <img loading="lazy" title="Haceb" src="https://cdn.jsdelivr.net/gh/ux-alkosto/webcomponents/assets/images/Haceb.svg" />
-                  </div>
-              </k-slider>
+
+
+              <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                  <!-- AdGlare: AK-Home-SAP-Celulares-oferta-destacada-1 -->
+                  <span id=zone104525410></span>
+                  <script>
+                      (function(r,d,u) {
+                          var s = d.createElement(r); s.async = true;
+                          u += '&cb=' + Date.now() + Math.random();
+                          s.src = u; var n = d.getElementsByTagName(r)[0];
+                          n.parentNode.insertBefore(s, n);
+                      })('script',document,'//engine.alkst.co/?104525410');
+                  </script>
+
+                </div>
+                <div class="carousel-cell">2</div>
+                <div class="carousel-cell">3</div>
+              </div>
+
+                <style>
+
+                  .carousel-cell {
+  width: 33%;
+  height: 450px;
+  margin-right: 16px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+    user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+</style>
+
+
 
                 <a href="/celulares/telefonos-celulares/c/BI_101_ALKOS">
                     <div class="cta-home">

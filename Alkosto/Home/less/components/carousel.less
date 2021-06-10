@@ -111,15 +111,13 @@
 		width: 24px;
 		height: 24px;
 		border-radius: 50%;
+		background: var(--text-color-disabled);
 		button& {
 			background: none;
 			color: inherit;
 			border: none;
 			padding: 0 !important;
 			font: inherit;
-			active{
-				background: var(--primary-color1);		
-			}
 		}
 	}
 	.animated {
@@ -223,4 +221,8 @@
 }
 .owl-height {
 	transition: height 500ms ease-in-out;
+}
+
+.carrusel--categorias button.owl-dot.active {
+	background: var(--primary-color1) !important;
 }

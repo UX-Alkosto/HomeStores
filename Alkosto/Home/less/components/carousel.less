@@ -5,6 +5,7 @@
 	-webkit-tap-highlight-color: transparent;
 	position: relative;
 	z-index: 1; 
+	margin: 16px 0 0 0;
 	.owl-stage {
 		position: relative;
 		-ms-touch-action: pan-Y;
@@ -92,6 +93,7 @@
 			border: none;
 			padding: 0 !important;
 			font: inherit;
+			display: none;
 		}
 		button.owl-next {
 			background: none;
@@ -99,6 +101,7 @@
 			border: none;
 			padding: 0 !important;
 			font: inherit;
+			display: none;
 		}
 	}
 	.owl-dot {
@@ -112,6 +115,8 @@
 		height: 24px;
 		border-radius: 50%;
 		background: var(--tex-color-disabled) !important;
+		border: none;
+    	margin: 0 8px 0 0;
 		button& {
 			background: none;
 			color: inherit;
@@ -201,6 +206,10 @@
 			-moz-user-select: none;
 			-ms-user-select: none;
 			user-select: none;
+			margin-right: 16px !important;
+			:last-child{
+				margin-right: 0 !important;
+			}
 		}
 	}
 	&.owl-grab {

@@ -1,0 +1,183 @@
+/* Style the tab */
+.tab-category {
+  overflow: show;
+  text-align: center;
+  margin: 0 auto;
+  button {
+    background-color: inherit;
+    border: solid 1px var(--primary-color1);
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: @h3;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    background: var(--alert-background-color);
+    box-shadow: 0px 1px 4px #919BA666;
+    @media @for-phone-mini{
+      font-size: 12px;
+    }
+    @media @for-phone{
+      font-size: 13px;
+      height: 40px;
+    }
+  }
+  li{
+    float: none !important;
+    clear: both !important;
+    display: inline-block;
+    margin: 0 8px;
+    @media @for-phone{
+      margin: 0 3px;
+    }
+    @media @for-phone-mini{
+      margin: 0 1px;
+    }
+  }
+  a {
+    color:var(--primary-color1);
+    font-weight:bold;
+    text-decoration: none !important;
+  }
+  @media @for-phone-mini{
+     font-size: 12px !important;
+  }
+}
+
+.nav-tabs{
+  border-bottom: none !important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #929292;
+    background-color: transparent;
+    border: transparent;
+    border-bottom-color: transparent;
+    cursor: default;
+    padding: 0;
+}
+
+.nav-tabs>li>a {
+    margin-right: 0;
+    line-height: 1.42857143;
+    border: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
+
+
+
+.tab-category .tab-title-category a:active,
+.tab-category .tab-title-category a:focus {
+    color: var(--alert-background-color) !important;
+}
+
+/* Create an active/current tablink class */
+.tab-category .tab-title-category.active {
+  margin-bottom:0px;
+  color: red;
+}
+
+/* Style the tab content */
+.tab-categorycontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.title-category{
+  color:#444444;
+  border-bottom:4px solid #EB5B25;
+  margin-bottom:0px;
+  font-weight:bold;
+  font-size: 24px;
+  padding: 9px 10px;
+  text-align: center;
+}
+
+.filete-title-category{
+  border-bottom:1px solid #DBDBDB;
+  margin-bottom:35px;
+  padding:0px;
+  padding-left:0px !important;
+  height:45px;
+  text-align: center;
+  clear: both;
+}
+
+.tab-filete-title-category{
+
+}
+
+.contenedor_home .active button{  
+    background: var(--primary-color1);
+    color: var(--alert-background-color); 
+}
+
+
+
+.active button a {
+    color: white !important;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+.tab-content{ 
+  position: relative;
+}
+
+.tab-content .cta-home{
+  position: absolute;
+  right: 0;
+  top: -43px;
+  font-size: @h3 !important;
+  @media @for-phone{
+    position: relative;
+    top: -24px;
+    font-size: @h4 !important;
+    width: 65%;
+  }
+  @media @for-tablet-only{
+    position: relative;
+    right: 0;
+    top: -8px;
+    font-size: 16px !important;
+  }
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+//tabs azules//
+
+.azul .active button {
+    background: var(--primary-color2);
+    border: solid 1px var(--primary-color2);
+    color: var(--alert-background-color) !important;
+}
+
+.azul button.tablinks{
+    border: solid 1px var(--primary-color2);
+        color: var(--primary-color2);
+}
+
+.azul button.tablinks a {
+    color: var(--primary-color2);
+}

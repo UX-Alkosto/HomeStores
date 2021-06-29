@@ -1,0 +1,278 @@
+.ocultar{
+    display: none;
+}
+.ctn-banner-big {
+    background: linear-gradient(to right, #ffffff, #f8c5b1);
+    color: #444444;
+    display: flex;
+    flex-wrap: wrap;
+    height: 380px;
+    justify-content: space-between;
+    max-width: 100%;
+    position: relative;
+    @media @for-tablet-landscape-up{
+        height: 309px;
+    }
+    @media @for-desktop-up{
+        height: 427px;
+    }
+}
+
+.ctn-banner-big-blue{
+    &:extend(.ctn-banner-big all);
+    background: linear-gradient(to right, #ffffff, #92c9e0);
+}
+
+.info-banner-big {
+    width: 45%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.logo-banner-big {
+    background: var(--primary-color1);
+    width: 90%;
+    max-width: 192px;
+    margin-right: auto;
+    padding: 10px;
+}
+.logo-banner-big-blue{
+    &:extend(.logo-banner-big);
+    background: var(--primary-color2);
+}
+
+.title-banner-big {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+    line-height: 18px;
+    @media @for-desktop-up{
+        font-size: 22px;
+        margin-top: 15px;
+        line-height: 20px;
+    }
+}
+
+
+.title-banner-big>p>span {
+    color: var(--primary-color1);
+    font-weight: bold;
+}
+.title-banner-big-blue>p>span{
+    color: var(--primary-color2);
+    font-weight: bold;
+}
+
+.title-banner-big>span {
+    font-size: 16px;
+    font-weight: normal;
+    @media @for-desktop-up{
+        font-size: 18px;
+    }
+}
+
+.price-banner-big {
+    margin-left: 10px;
+    display: inline-block;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    p {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        @media @for-desktop-up{
+            font-size: 15px;
+        }
+        &:last-child{
+            background: white;
+            border-radius: 5px;
+            border: 1px solid var(--primary-color1);
+            color: var(--primary-color1);
+            font-size: 40px;
+            font-weight: bold;
+            margin-right: auto;
+            padding: 0 8px;
+            width: 187px;
+            text-align: center;
+            @media @for-desktop-up{
+                font-size: 38px;
+                width: 210px;
+            }
+        }
+        span{
+            color: var(--primary-color1);
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}
+.price-banner-big-blue{
+    &:extend(.price-banner-big all);
+    p{
+        &:last-child{
+            border: 1px solid var(--primary-color2);
+            color: var(--primary-color2);
+        }
+    }
+    span{
+        color: var(--primary-color2);
+    }
+}
+
+.img-banner-big {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    height: 320px;
+    @media @for-tablet-landscape-up{
+        height: 380px;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+.ctn-prices{
+    width: 50%;
+    position: absolute;
+    top: 200px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.ctn-price-bank{
+    background: #005DAA;
+    color: white;
+    height: 31px;
+    width: 187px;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 6px;
+    img{
+        width: 27px !important;
+        float: left;
+        margin-left: 15px;
+    }
+    p{
+        margin-left: 57px;
+        font-size: 15px;
+        border-left: 1px solid white;
+        padding-left: 15px;
+    }
+    @media @for-tablet-landscape-up{
+        width: 207px;
+    }
+}
+
+.legal-banner-big {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 10px;
+    padding: 0px 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+   @media @for-tablet-landscape-up {
+       font-size: 15px;
+   }
+}
+.label-new{
+    color: white;
+    background: var(--primary-color2);
+    font-size: 21px;
+    text-align: center;
+    margin-top: 8px;
+    padding: 0px 5px;
+    border-radius: 4px;
+    width: 90%;
+    p{
+        font-weight: bold;
+        margin: 0px;
+    }
+}
+.label-new-blue{
+    &:extend(.label-new);
+    background: var(--primary-color1);
+}
+.label-discount{
+    background: var(--primary-color1);
+    border-radius: 4px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    margin-left: 10px;
+    padding: 12px 5px 5px 5px;
+    line-height: 18px;
+    width: 130px;
+    height: 81px;
+    bottom: 69px;
+    transition: all 0.3s;
+    p{
+        font-size: 47px;
+        margin-top: 12px;
+        font-weight: bold;
+        @media @for-desktop-up{
+            font-size: 50px;
+        }
+    }
+    span{
+        font-size: 12px;
+        font-weight: normal;
+        @media @for-desktop-up{
+            font-size: 16px;
+        }
+    }
+    @media @for-desktop-up{
+        padding: 10px 5px 5px 5px;
+        width: 157px;
+    }
+}
+
+.label-discount-blue{
+    &:extend(.label-discount all);
+    background: var(--primary-color2);
+}
+.cta-hover{
+    color: var(--primary-color1);
+    font-size: 14px;
+    text-align: center;
+    text-decoration: underline;
+    width: 100%;
+    transition: all 0.3s;
+    i{
+        font-size: 10px;
+        display: inline;
+        color: var(--primary-color1);
+    }
+}
+
+// Efectos Hover
+
+.ctn-banner-big{
+    &:hover .label-discount{
+            bottom: 55px;
+            opacity: 0;
+    }
+    &:hover .cta-hover{
+        opacity: 0;
+    }
+    &:hover .ctn-prices{
+        top: 185px;
+        opacity: 1;
+        @media @for-tablet-landscape-up{
+            top: 230px;
+        }
+    }
+    &:hover .legal-banner-big{
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+.ctn-banner-big-blue{
+    &:hover .label-discount-blue{
+        bottom: 55px;
+        opacity: 0;
+}
+}

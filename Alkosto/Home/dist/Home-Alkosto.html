@@ -277,7 +277,7 @@
 
     <!--banner mobile destacados-->
 
-    
+
 
 </div>
 
@@ -336,7 +336,7 @@
                 <div class="carousel__rotativeBanner transparente">
                     <div class="carrusel--categorias">
                         <div class="banner-adglare">
-                           <!-- AdGlare: AK-Home-SAP-Celulares-oferta-destacada-1 -->
+                            <!-- AdGlare: AK-Home-SAP-Celulares-oferta-destacada-1 -->
                             <span id=zone104525410></span>
                             <script>
                                 (function(r, d, u) {
@@ -350,7 +350,7 @@
                             </script>
                         </div>
                         <div class="banner-adglare">
-                           <!-- AdGlare: AK-Home-SAP-Celulares-oferta-2 -->
+                            <!-- AdGlare: AK-Home-SAP-Celulares-oferta-2 -->
                             <span id=zone115712158></span>
                             <script>
                                 (function(r, d, u) {
@@ -365,17 +365,17 @@
                         </div>
                         <div class="banner-adglare">
                             <!-- AdGlare: Ak-Home-SAP-Celulares-oferta-3 -->
-                    <span id=zone680054292></span>
-                    <script>
-                        (function(r, d, u) {
-                            var s = d.createElement(r);
-                            s.async = true;
-                            u += '&cb=' + Date.now() + Math.random();
-                            s.src = u;
-                            var n = d.getElementsByTagName(r)[0];
-                            n.parentNode.insertBefore(s, n);
-                        })('script', document, '//engine.alkst.co/?680054292');
-                    </script>
+                            <span id=zone680054292></span>
+                            <script>
+                                (function(r, d, u) {
+                                    var s = d.createElement(r);
+                                    s.async = true;
+                                    u += '&cb=' + Date.now() + Math.random();
+                                    s.src = u;
+                                    var n = d.getElementsByTagName(r)[0];
+                                    n.parentNode.insertBefore(s, n);
+                                })('script', document, '//engine.alkst.co/?680054292');
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -451,7 +451,7 @@
             <!-- Fin Computadores -->
             <!-- TV -->
             <div id="TV" class="tab-pane fade">
-                
+
                 <div class="carousel__rotativeBanner transparente">
                     <div class="carrusel--categorias">
                         <div class="banner-adglare">
@@ -469,7 +469,7 @@
                             </script>
                         </div>
                         <div class="banner-adglare">
-                           <!-- AdGlare: AK-Home-SAP-TV-oferta-2 -->
+                            <!-- AdGlare: AK-Home-SAP-TV-oferta-2 -->
                             <span id=zone767578074></span>
                             <script>
                                 (function(r, d, u) {
@@ -530,7 +530,7 @@
         </li>
         <li class="tab-title-category">
             <a data-toggle="tab" href="#Electrohogar">
-                <button class="tablinks">Deportes</button>
+                <button class="tablinks">Cámaras</button>
             </a>
         </li>
     </ul>
@@ -584,7 +584,7 @@
                         </script>
                     </div>
                 </div>
-            </div> 
+            </div>
 
             <a href="/electrodomesticos/c/BI_ELHO_ALKOS">
                 <div class="cta-home cta-azul">
@@ -645,7 +645,7 @@
                     </div>
                 </div>
             </div>
-            
+
 
             <a href="/hogar/c/BI_HOGA_ALKOS">
                 <div class="cta-home cta-azul">
@@ -655,6 +655,7 @@
 
         </div>
         <!-- Fin Hogar -->
+
         <!-- Electrohogar -->
         <div id="Electrohogar" class="tab-pane fade">
 
@@ -705,7 +706,7 @@
                 </div>
             </div>
 
-            <a href="/deportes/c/BI_DEPO_ALKOS">
+            <a href="/camaras/c/BI_CAMA_ALKOS">
                 <div class="cta-home cta-azul">
                     Ver más <i class="ico-font icon-arrow-right-square"></i>
                 </div>
@@ -790,7 +791,7 @@
                             </script>
                         </div>
                     </div>
-                </div>  
+                </div>
 
                 <a href="/videojuegos/consolas/c/BI_131_ALKOS">
                     <div class="cta-home">
@@ -933,55 +934,51 @@
 </div>
 
 <script>
-window.onload = function() {
+    window.onload = function() {
 
-$('.carrusel--categorias').owlCarousel({
-    loop:false,
-    margin:16,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:2,
-        },
-        1000:{
-            items:3,
-            nav:true,
-        }
+        $('.carrusel--categorias').owlCarousel({
+            loop: false,
+            margin: 16,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                }
+            }
+        })
+
+
+        $('.carrusel--destacados').owlCarousel({
+            loop: false,
+            margin: 16,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                }
+            }
+        })
+
+
+
+
+
+
     }
-})
-
-
-$('.carrusel--destacados').owlCarousel({
-    loop:false,
-    margin:16,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:2,
-        },
-        1000:{
-            items:4,
-            nav:true,
-        }
-    }
-})
-
-
-
-
-
-
-}
-
-
-
 </script>
-
